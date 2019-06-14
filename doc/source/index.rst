@@ -28,5 +28,6 @@ Contents:
    Installation
    Tutorials
    Development
+   Contact
 
 
