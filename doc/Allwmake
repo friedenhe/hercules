@@ -1,0 +1,3 @@
+echo "Compiling HERCULES documentation"
+make html
+ln -s build/html/index.html HERCULESDoc.html

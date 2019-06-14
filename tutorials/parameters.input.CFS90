@@ -1,0 +1,58 @@
+&domain
+  p_row      = 2
+  p_col      = 1
+  lx         = 100.0
+  ly         = 100.0
+  lz         = 40.0
+  nx         = 288
+  ny         = 288
+  nz         = 128
+  zstretch   = 1.1
+  ochannel   = 1
+/
+
+&modeling
+  dp_opt     = 3
+  cds        = 2
+  issk       = 1
+  dts        = 2
+  isnoise    = 0
+  noise_mag  = 0.1
+  isdamp     = 1
+  nzdamp     = 15
+  cdamp      = 0.01
+/
+
+&constants
+  nu         = 0.0025
+  alpha      = 0.003571429
+  got        = 0.0
+  fc         = 0.005
+  ug         = 1.0
+  vg         = 0.0
+  dt         = 0.1
+  imax       = 20000
+  u_mrf      = 0.0
+  isscalar   = 1
+  t_ref      = 0
+  tbot       = -1.0
+  ttop       = 0.0
+  is_ri_var  = 0
+  ri_str     = 0.0
+  ri_end     = 0.0
+/
+
+&io
+  restart    = 1
+  istmsr     = 1
+  ibackup    = 2000
+  iinstfl    = 2000
+  imeanfl    = 2000
+  isxy2d     = 0
+  xy2d_id    = 10,32,64
+  isxz2d     = 0
+  xz2d_id    = 32,64
+  isyz2d     = 0
+  yz2d_id    = 32,64
+  intv_2d    = 1000
+/
