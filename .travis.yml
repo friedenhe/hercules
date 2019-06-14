@@ -1,0 +1,27 @@
+sudo: true
+
+os:
+    - linux
+
+language: generic
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc
+    - gfortran
+    - libblas-dev
+    - liblapack-dev
+    - libopenmpi-dev
+    - openmpi-bin
+
+before_install:
+    - wget git clone https://github.com/friedenhe/hercules.git
+
+install:
+
+script:
+    - cd hercules
+    - sh install_GNU.sh
