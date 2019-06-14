@@ -18,7 +18,7 @@ addons:
     - openmpi-bin
 
 before_install:
-    - wget git clone https://github.com/friedenhe/hercules.git
+    - git clone https://github.com/friedenhe/hercules.git
 
 install:
 
