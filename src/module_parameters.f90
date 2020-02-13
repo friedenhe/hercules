@@ -335,8 +335,13 @@ contains
         ! test if nprc=p_row*p_col
         if (nprc .ne. p_row*p_col) then
             if (myid .eq. 0) then
-                print *,'nprc error'
-                print *,'please set nprc=p_row*p_col!'
+                print *,' '
+                print *,'Error when running mpirun -np nprc hercules.exe'
+                print *,'nprc=',nprc,', while p_row=',p_row,', p_col=',p_col
+                print *,'Please either run mpirun -np ',p_row*p_col,' hercules.exe'
+                print *,'or change p_row and p_col in parameters.info such that'
+                print *,'nprc=p_row*p_col'
+                print *,' '
                 stop
             endif
         endif
